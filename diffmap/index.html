@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Different Map </title>
+
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+ </head>
+ <body>
+
+<div class="container">
+
+   <div id="map">
+     <img src="./assets/croppedroute3.png">
+    <script src="./script.js"></script>
+   </div>
+
+   <div id="textoverlay">
+     <h1 id="rftitle"> ROUTE FINDER </h1>
+       <div class="steps">
+         <section id="location_search_container">
+           <label for="location_search_text"> Location:</label>
+           <input type="text" id="location_search_text"
+                         class="location_entry textfield"
+                         title="Location search"
+                         placeholder="Zip Code"
+                         value="33132, United States" autocomplete="off"/>
+
+
+         </section>
+
+         <section class="approxdistance">
+           <label for="route_length">Approximate Distance:</label>
+                   <input id="distancenumber" type="text" id="route_length"
+                          value="0"
+                       size="3" maxlength="3" />
+                       <select id="route_length_unit">
+                       <option value="0" selected>mi</option>
+                       <option value="1">km</option>
+                   </select>
+         </section>
+       </div>
+
+
+     <p class="paragraphtxt"> View your recommended route on the map on the left. </p>
+     <div class=gobutton>
+       <a id="auto_route_button" href="../googlemaptest/index.html" class="button cta">
+         <button>Go Back
+     </button>
+   </a>
+     </div>
+   </div>
+
+</div>
+ </body>
+</html>
