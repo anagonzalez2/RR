@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Running Routes</title>
+   <meta name="viewport" content="initial-scale=1.0">
+   <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css?family=Rubik:500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+ </head>
+ <body>
+   <div class="container">
+
+   <div id ="map">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJSyGOe6r8U-qD15GrLdJ981pvm0drR4c&callback=initMap"
+   async defer></script>
+   </div>
+
+<div id ="textoverlay">
+ <h1 id="rftitle"> ROUTE FINDER </h1>
+ <div class="steps">
+   <section id="location_search_container">
+     <label for="location_search_text"> Location:</label>
+       <input type="text" id="location_search_text"
+                         class="location_entry textfield"
+                         title="Location search"
+                         placeholder="Zip Code"
+                         value="33132, United States" autocomplete="off"/>
+
+           <a class="geolocate" href="javascript:void(0);" title="Locate Me">
+           <span class="mapping-api-sprite sprite-geolocate" alt="Locate Me"></span>
+           </a>
+           <a id="location_search" href="javascript:void(0);" class="button" title="Search for location">
+           <span class="mapping-api-sprite sprite-icon_search_med" alt="Magnifying glass"></span>
+           </a>
+
+   </section>
+
+   <section class="approxdistance">
+   <label for="route_length">Approximate Distance:</label>
+                   <input id="distancenumber" type="text" id="route_length"
+                          value="0"
+                       size="3" maxlength="3" />
+                       <select id="route_length_unit">
+                       <option value="0" selected>mi</option>
+                       <option value="1">km</option>
+                   </select>
+   </section>
+   </div>
+   <div class=gobutton>
+     <a href="../diffmap/index.html" class="button cta">
+       <button >Go!
+     </button></a>
+     <!-- <article id="mode_button_wrapper">
+                   <a id="auto_route_button"
+                      href="javascript:void(0);"
+                      class="button cta">
+                      Recommend a New Route
+                   </a>
+               </article> -->
+   </div>
+   <div id="dfp_modal" class="boxshort">
+           <script type="text/javascript">
+               var rtp = rtp || {};
+           </script>
+   </div>
+
+
+
+</div>
+
+</div>
+ </body>
+</html>
