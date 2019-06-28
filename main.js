@@ -1,4 +1,4 @@
-//Mabel file commit
+//Mabel main.js commit to master
 
 
 function openCity(evt, cityName) {
