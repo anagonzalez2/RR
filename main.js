@@ -1,5 +1,5 @@
 //Mabel main.js commit to master
-
+//map
 
 function openCity(evt, cityName) {
   // Declare all variables
@@ -23,6 +23,7 @@ function openCity(evt, cityName) {
 }
 document.getElementsByClassName('tablinks')[0].click()
 
+//////////////////////////////////////////////////////////
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -68,3 +69,19 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+//Sign up form to send data to google spreadsheet titled RR signup
+var $form = $('form#signup-form'),
+    url = 'https://script.google.com/macros/s/AKfycbybBSrZQ3gZDhrcjQVRtL0gzm_MTK0gxHeJRCHPNk3rFgtF02g/exec'
+
+$('#signupbtn').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
