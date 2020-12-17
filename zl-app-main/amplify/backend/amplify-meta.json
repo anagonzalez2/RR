@@ -1,0 +1,40 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyauthzl-enviro-174946-authRole",
+      "UnauthRoleArn": "arn:aws:iam::975841195126:role/amplify-amplifyauthzl-enviro-174946-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::975841195126:role/amplify-amplifyauthzl-enviro-174946-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifyauthzl-enviro-174946-deployment",
+      "UnauthRoleName": "amplify-amplifyauthzl-enviro-174946-unauthRole",
+      "StackName": "amplify-amplifyauthzl-enviro-174946",
+      "StackId": "arn:aws:cloudformation:us-east-1:975841195126:stack/amplify-amplifyauthzl-enviro-174946/2dd40450-3c03-11eb-b30a-121b58656156",
+      "AmplifyAppId": "dajp4287pe831"
+    }
+  },
+  "auth": {
+    "amplifyauthzle8d9202f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyauthzl-enviro-174946-deployment/amplify-cfn-templates/auth/amplifyauthzle8d9202f-cloudformation-template.yml",
+        "logicalId": "authamplifyauthzle8d9202f"
+      },
+      "lastPushTimeStamp": "2020-12-14T22:30:23.318Z",
+      "output": {
+        "AppClientSecret": "1p86465ccurl0ch82hdgqqn20lk3vukqgg3bicrmupap29pj2qm0",
+        "UserPoolId": "us-east-1_MeAPSkcDq",
+        "AppClientIDWeb": "39bv7jnfmc8ef2eabbkn0qf0lp",
+        "AppClientID": "7r030u0qq2isgvdbisa422sh5s",
+        "HostedUIDomain": "default-domain-enviro",
+        "IdentityPoolId": "us-east-1:25f28bd8-9cd1-45bf-96a2-dd7583c4a7bb",
+        "IdentityPoolName": "amplifyauthzle8d9202f_identitypool_e8d9202f__enviro",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"exp://127.0.0.1:19000/\"],\"LogoutURLs\":[\"exp://127.0.0.1:19000/--/\"]}",
+        "UserPoolName": "amplifyauthzle8d9202f_userpool_e8d9202f"
+      },
+      "lastPushDirHash": "5mF1TGdinkkDS8Zd7NCja8pclwk="
+    }
+  }
+}
